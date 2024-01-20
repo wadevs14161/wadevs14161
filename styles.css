@@ -1,0 +1,116 @@
+.top {
+    /* padding-bottom: 5px; */
+    /* margin-bottom: 10%; */
+    border: 3px solid #4CAF50;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bottom {
+    /* margin-bottom: 1px; */
+    border: 3px solid #4CAF50;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h1 {
+    font-family: Arial;
+    width: 25%;
+    /* border: 3px solid #4CAF50; */
+    font-size: 24px;
+}
+
+.h1right {
+    font-family: Arial;
+    text-align: right;
+    font-size: 20px;
+}
+
+.container1 {
+    width: 910px;
+    height: 250px;
+    margin: 30px;
+    outline: solid 3px #4CAF50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container1 img {
+    object-fit: contain;
+}
+
+.circle {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: #188d1c;
+}
+
+.container2 {
+    width: 660px;
+    height: 250px;
+    outline: solid 3px #4CAF50;
+    display: flex;
+    flex-direction: column;
+}
+
+.container3 {
+    width: 910px;
+    height: 400px;
+    margin: 30px;
+    margin-bottom: 5px;
+    outline: solid 3px #4CAF50;
+    display: flex;
+}
+
+#scratch {
+    width: 350px;
+}
+
+
+.infotitle {
+    font-family: Arial;
+    font-size: medium;
+    font-weight: 900;
+}
+
+.info {
+    font-family: Arial;
+    font-size: small;
+    font-weight: 500;
+}
+
+/* Facebook */
+.fa-facebook {
+    padding: 5px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    background: #3B5998;
+    color: white;
+  }
+
+/* Linkedin */
+.fa-linkedin {
+    padding: 5px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    background: #007bb5;
+    color: white;
+}
+
+/* Instagram */
+.fa-instagram {
+    padding: 5px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    background: #dd0faa;
+    color: white;
+}
+
+#copyright {
+    text-align: right;
+}
