@@ -7,64 +7,90 @@
         <link href="styles.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>Wen Shin</title>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                let aboutme = document.getElementById("photochange");
+
+                aboutme.addEventListener('click', function() {
+                    document.getElementById('profilephoto').src = "real_me.jpg";
+                });
+            });
+        </script>
     </head>
     <body>
-        <div class="top">
-            <h1 class="infotitle">LUO WEN SHIN
-                <p style="font-size: small; font-weight: 600;">
-                    Engineer
-                </p>
-            </h1>
-            <h1> </h1>
-            <h1> </h1>
-            <h1 class="h1right"><a href="https://drive.google.com/file/d/1lhfjW7uF7tpJ7qbkodd7qI9L304G3z36/view?usp=drive_link" target="_blank" style="text-decoration: none;">Resume</a>
-                 | Projects | Contact</h1>
+        <div style="margin-top: 3px; margin-left: 8px; margin-right: 8px;">
+            <div class="topleft">
+                <h1 class="infotitle">LUO WEN SHIN</h1>
+                <h1 style="margin-top: 0px; font-size: small; font-weight: 600; text-align: left;">Engineer</h1>
+            </div>
+        
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link active" style="color: #4CAF50;" aria-current="page" target="_blank" href="https://drive.google.com/file/d/1lhfjW7uF7tpJ7qbkodd7qI9L304G3z36/view?usp=drive_link">Resume |</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="color: #4CAF50;" href="#">Projects |</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="color: #4CAF50;" href="#">Link |</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" aria-disabled="true">Disabled |</a>
+                </li>
+            </ul>
         </div>
-
         <div class="container1">
-            <img class="circle" src="photo.jpg" alt="my photo">
+            <img class="profile" id="profilephoto" src="photo.jpg" alt="my photo">
             <div class="container2">
                 <div class="container2">
-                    <p style="padding: 10px; padding-bottom: 0px; line-height: 15px; font-weight: 600;">
-                        About me
-                    </p>
+                    <button class="btn" id="photochange" style="text-align: left; line-height: 15px; font-weight: 600; text-decoration: underline;">About me?</button>
                     <p style="padding-left: 12px;">
                         Going to study at Queen Mary University of London.<br>
                         I love tennis.
                     </p>
                 </div>
                 <div class="container2">
-                    <p style="padding: 10px; padding-bottom: 0px; line-height: 15px; font-weight: 600;">
-                        Skill
-                        <ul style="padding-left: 12px;">
+                    <p style="padding: 10px; padding-bottom: 0px; line-height: 15px; font-weight: 600; text-decoration: underline;">Skill</p>
+                        <p style="padding-left: 12px;">
                             programming language: C, python, SQL
-                        </ul>
-                        <ul style="padding-left: 12px;">
+                        </p>
+                        <p style="padding-left: 12px;">
                             language: English (fluent)
-                        </ul>
-                    </p>
+                        </p>
+                </div>
+            </div>
+            <div class="gallery">
+                <div class="card" style="border: none;">
+
+                </div>
+                <div class="card">
+                    <img src="utr_logo.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <a href="https://app.utrsports.net/profiles/1867344" class="btn btn-primary" target="_blank">Check my level</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 480px">
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1ZxRufkRAnaM5EnFOxVtQz?utm_source=generator" height="352" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    <div class="card-body">
+                        <a href="https://open.spotify.com/playlist/1ZxRufkRAnaM5EnFOxVtQz?si=01c13d9f3a7a4e72" class="btn btn-primary" target="_blank">Check my playlist</a>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="container3">
-            <iframe id="scratch" src="https://scratch.mit.edu/projects/943991106/embed"></iframe>
-            <div style="outline: solid 2px #4CAF50; width: 200px;">
-                <p id="top">Top score</p>
-                <p id="score">123</p>
-                <button id="update">update score</button>
+            <div>
+                <iframe id="scratch" src="https://scratch.mit.edu/projects/943991106/embed"></iframe>
+                <div>
+                    <h4 style="text-align: center; margin-top: 5px; text-decoration: underline;">HOW TO PLAY</h4>
+                    <h5 style="width: 500px; padding-left: 100px; text-align: left;">Click Flag <img src="flag_green.JPG" style="width: 20px; height: 20px;" alt="flag icon"> start</h5>
+                    <h5 style="width: 500px; padding-left: 100px; text-align: left;">Click Spacebar <img src="spacebar-icon-25.jpg" style="width: 80px; height: 20px;" alt="spacebar icon"> to jump</h5>
+                </div>
+            </div>
+            <div class="container2" style="height: 100%; width: auto;">
+                
             </div>
         </div>
-        <script>
-            let iframe = document.getElementById("scratch");
-            
-            // let button = document.getElementById("update");
-
-            // button.addEventListener('click', function() {
-            //     document.getElementById('top').innerHTML = Date();
-            // });
-            
-        </script>
 
         <hr class="aboveinfo">
 
